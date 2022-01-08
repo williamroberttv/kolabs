@@ -1,5 +1,7 @@
 import { ISourceOptions } from 'react-tsparticles';
-import { Container, Content, Texture } from './styles';
+import {
+  CreateAccountTitle, Container, Content, Texture,
+} from './styles';
 import textureImg from '../../assets/texture.png';
 import Title from '../../components/Title';
 import Login from '../../components/Login';
@@ -87,6 +89,7 @@ export default function Home() {
       <Content>
         <Title />
         <Login />
+        <CreateAccountTitle>don&lsquo;t have an account?</CreateAccountTitle>
         <Footer />
       </Content>
 

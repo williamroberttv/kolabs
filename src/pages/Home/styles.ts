@@ -30,3 +30,19 @@ export const Content = styled.div`
   width: 100%;
   height: 100vh;
 `;
+
+export const CreateAccountTitle = styled.p`
+  position: absolute;
+  bottom: 29%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover{
+    color: rgba(102, 0, 153, 1);
+    text-decoration: underline;
+  }
+`;
