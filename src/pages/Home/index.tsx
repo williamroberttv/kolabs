@@ -1,6 +1,7 @@
 import { ISourceOptions } from 'react-tsparticles';
 import { Container, Content, Texture } from './styles';
 import textureImg from '../../assets/texture.png';
+import Title from '../../components/Title';
 
 export default function Home() {
   const particlesOptions: ISourceOptions = {
@@ -81,7 +82,9 @@ export default function Home() {
         options={particlesOptions}
       />
       <Texture imageUrl={textureImg} />
-      <Content />
+      <Content>
+        <Title />
+      </Content>
 
     </>
   );
