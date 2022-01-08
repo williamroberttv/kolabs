@@ -2,6 +2,7 @@ import { ISourceOptions } from 'react-tsparticles';
 import { Container, Content, Texture } from './styles';
 import textureImg from '../../assets/texture.png';
 import Title from '../../components/Title';
+import Login from '../../components/Login';
 
 export default function Home() {
   const particlesOptions: ISourceOptions = {
@@ -84,6 +85,7 @@ export default function Home() {
       <Texture imageUrl={textureImg} />
       <Content>
         <Title />
+        <Login />
       </Content>
 
     </>
