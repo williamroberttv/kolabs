@@ -1,25 +1,19 @@
 import styled from 'styled-components';
 
-interface ContainerProps {
-  imageUrl: string;
-}
-
-export const Texture = styled.div<ContainerProps>`
-  background: url(${props => props.imageUrl});
+export const Texture = styled.div`
+  background: linear-gradient(180deg, rgba(255, 255,255,0.75) 0%,
+ rgba(255, 255,255, 0.1) 100%);
   backdrop-filter:blur(25px);
   border-radius: 15px;
   width: 264px;
   height: 360px;
-  opacity: 0.3;
+  opacity: 0.97;
   position:absolute;
 `;
 
 export const Container = styled.div`
   position: relative;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(255, 255,255,0.75) 0%,
- rgba(255, 255,255, 0.1) 100%);
-  backdrop-filter:blur(25px);
   border-radius: 15px;
   width: 264px;
   height: 360px;
@@ -28,8 +22,7 @@ export const Container = styled.div`
   justify-items:center;
   flex-direction:column;
   img{
-  width: 56px;
-  height: 43px;
+  width: 82px;
   margin-top: 16px;
   }
   h1{
@@ -37,7 +30,11 @@ export const Container = styled.div`
     font-size: 50px;
     line-height: 64px;
     color: #262626;
-    margin-top:26px;
-
+    @media(max-width: 780px){
+      background: -webkit-linear-gradient(180deg, rgba(69, 16, 138, 0.5) 0%,
+       rgba(164, 94, 255, 0.5) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 `;
