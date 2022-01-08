@@ -4,8 +4,8 @@ import Home from './pages/Home';
 function App() {
   return (
     <>
-      <Home />
       <GlobalStyles />
+      <Home />
     </>
   );
 }
