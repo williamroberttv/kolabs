@@ -4,11 +4,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
   p{
     font-size: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    @media(max-width: 780px){
+      color: rgba(153, 102, 204, 1);
+    }
   }
   input{
     background: rgba(119, 61, 177, 0.08);
