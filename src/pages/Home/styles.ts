@@ -12,6 +12,11 @@ position: absolute;
 background: linear-gradient(60deg, rgba(255,255,255,1) 28%,
  rgba(227,255,254,1) 42%, rgba(197,145,255,1) 100%);
  z-index:-1;
+ 
+ @media(max-width:780px){
+  background: linear-gradient(163deg, rgba(255,255,255,1) 39%,
+   rgba(227,255,254,1) 46%, rgba(197,145,255,1) 100%);
+ }
 `;
 
 export const Texture = styled.div<TextureProps>`
