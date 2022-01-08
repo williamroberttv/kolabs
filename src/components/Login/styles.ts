@@ -30,5 +30,11 @@ export const Container = styled.div`
     font-size: 50px;
     line-height: 64px;
     color: #262626;
+    @media(max-width: 780px){
+      background: -webkit-linear-gradient(180deg, rgba(69, 16, 138, 0.5) 0%,
+       rgba(164, 94, 255, 0.5) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 `;
