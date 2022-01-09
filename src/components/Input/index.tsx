@@ -24,6 +24,7 @@ function Input({ name, title, type }:InputProps) {
     <Container>
       <p>{title}</p>
       <input
+        aria-label={name}
         type={type}
         onBlur={() => setError(true)}
       />
