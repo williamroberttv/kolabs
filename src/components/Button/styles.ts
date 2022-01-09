@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.button`
-   margin-top: 26px;
+   margin-top: 18px;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
