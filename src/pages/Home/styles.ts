@@ -38,7 +38,7 @@ export const Content = styled.div`
 
 export const CreateAccountTitle = styled.p`
   position: absolute;
-  bottom: 29%;
+  bottom: 27%;
   font-size: 14px;
   text-transform: uppercase;
   font-size: 10px;
