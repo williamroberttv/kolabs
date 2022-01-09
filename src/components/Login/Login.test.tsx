@@ -17,13 +17,13 @@ describe('Tests for Login component', () => {
   it('Should contain an input for user', () => {
     render(<Login />);
 
-    expect(screen.getByLabelText('user')).toBeInTheDocument();
+    expect(screen.getByLabelText('e-mail')).toBeInTheDocument();
   });
 
   it('Should contain an input for password', () => {
     render(<Login />);
 
-    expect(screen.getByLabelText('password')).toBeInTheDocument();
+    expect(screen.getByLabelText('senha')).toBeInTheDocument();
   });
 
   it('Should contain a button', () => {
